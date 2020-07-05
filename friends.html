@@ -1,64 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends | Kakao_chat</title>
+    <script
+      src="https://kit.fontawesome.com/bdd998710e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends | Kakao_chat </title>
-    <script src="https://kit.fontawesome.com/bdd998710e.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  <body>
     <!-- status bar -->
     <div class="status-bar">
-        <span class="status-bar__clock">12:50</span>
-        <div class="status-bar__column">
-            <i class="far fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-signal"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">100%</span>
-            <i class="fas fa-battery-full"></i>
-        </div>
-        <div class="status-bar__column"></div>
+      <span class="status-bar__clock">12:50</span>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+      <div class="status-bar__column"></div>
     </div>
     <header class="header">
-        <div class="header__header-column">
-            <h1 class="header__tiitle">Friends</h1>
-        </div>
-        <div class="class header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search fa-2x"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-cog fa-2x"></i>
-            </span>
-        </div>
+      <div class="header__header-column">
+        <h1 class="header__tiitle">Friends</h1>
+      </div>
+      <div class="class header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog fa-2x"></i>
+        </span>
+      </div>
     </header>
+    <main class="frineds">
+      <header class="friends__list">
+        <div class="freinds__frined freind freind--large">
+          <div class="freind__column">
+            <img
+              src="images/jeongho_avatar.jpeg"
+              class="g-avatar friend avatar"
+            />
+            <div class="frined__content">
+              <span class="freind__name">
+                Jeongho Yun
+              </span>
+              <span class="friend__status">
+                I wanna be super developoer!!
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="frineds__plus-frined">
+        <h5 class="freinds__plus-title">Plus freind</h5>
+        <div class="freinds__frined freind">
+          <div class="freind__column">
+            <img
+              src="images/jeongho_avatar.jpeg"
+              class="g-avatar friend avatar"
+            />
+            <div class="frined__content">
+              <span class="freind__name">
+                Plus Friend
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- plus friends -->
+      <ul class="frineds__list">
+        <h5 class="frineds__title">Friends 14</h5>
+        <li class="freinds__frined freind freind--large">
+          <div class="freind__column">
+            <img
+              src="images/jeongho_avatar.jpeg"
+              class="g-avatar friend avatar"
+            />
+            <div class="frined__content">
+              <span class="freind__name">
+                Jeongho Yun2
+              </span>
+              <span class="friend__status">
+                Jeongho's other friends
+              </span>
+            </div>
+          </div>
+          <div class="freind__column">
+            <div class="freind__now-playting-music">
+              <span>Painkiller - (Ruel)</span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
     <!-- navigation bar -->
     <navigation class="navi">
-        <ul class="navi_list">
-            <li class="navi__list-item">
-                <a href="friends.html" class="navi__list-link">
-                    <i class="fas fa-user"></i>
-                </a>
-            </li>
-            <li class="navi__list-item">
-                <a href="index.html" class="navi__list-link">
-                    <i class="far fa-comment"></i>
-                </a></li>
-            <li class="navi__list-item">
-                <a href="find.html" class="navi__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="navi__list-item">
-                <a href="more.html" class="navi__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
-        </ul>
+      <ul class="navi_list">
+        <li class="navi__list-item">
+          <a href="friends.html" class="navi__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="navi__list-item">
+          <a href="index.html" class="navi__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="navi__list-item">
+          <a href="find.html" class="navi__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="navi__list-item">
+          <a href="more.html" class="navi__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
     </navigation>
-</body>
-
+  </body>
 </html>
