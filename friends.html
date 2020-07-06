@@ -14,7 +14,9 @@
   <body>
     <!-- status bar -->
     <div class="status-bar">
-      <span class="status-bar__clock">12:50</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">12:50</span>
+      </div>
       <div class="status-bar__column">
         <i class="far fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -23,31 +25,30 @@
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <div class="status-bar__column"></div>
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__tiitle">Friends</h1>
+        <h1 class="header__title">Friends</h1>
       </div>
-      <div class="class header__header-column">
+      <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search fa-2x"></i>
+          <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog fa-2x"></i>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-    <main class="frineds">
-      <header class="friends__list">
-        <div class="freinds__frined freind freind--large">
-          <div class="freind__column">
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend">
+          <div class="friend__column">
             <img
               src="images/jeongho_avatar.jpeg"
-              class="g-avatar friend avatar"
+              class="g-avatar friend__avatar"
             />
-            <div class="frined__content">
-              <span class="freind__name">
+            <div class="friend__content">
+              <span class="friend__name">
                 Jeongho Yun
               </span>
               <span class="friend__status">
@@ -57,53 +58,60 @@
           </div>
         </div>
       </header>
-
-      <div class="frineds__plus-frined">
-        <h5 class="freinds__plus-title">Plus freind</h5>
-        <div class="freinds__frined freind">
-          <div class="freind__column">
-            <img
-              src="images/jeongho_avatar.jpeg"
-              class="g-avatar friend avatar"
-            />
-            <div class="frined__content">
-              <span class="freind__name">
+      <!-- plus friends -->
+      <div class="friends__plus">
+        <h5 class="friends__plus-title">Plus freind</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/plus_friend_avatar.jpeg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
                 Plus Friend
               </span>
             </div>
           </div>
         </div>
       </div>
-      <!-- plus friends -->
-      <ul class="frineds__list">
-        <h5 class="frineds__title">Friends 14</h5>
-        <li class="freinds__frined freind freind--large">
-          <div class="freind__column">
-            <img
-              src="images/jeongho_avatar.jpeg"
-              class="g-avatar friend avatar"
-            />
-            <div class="frined__content">
-              <span class="freind__name">
-                Jeongho Yun2
+
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend--large">
+          <div class="friend__column">
+            <img src="images/iu_avatar.jpeg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                IU
               </span>
               <span class="friend__status">
-                Jeongho's other friends
+                Im famous singer!!
               </span>
             </div>
           </div>
-          <div class="freind__column">
-            <div class="freind__now-playting-music">
+          <div class="friend__column">
+            <div class="friend__now-playing-music">
               <span>Painkiller - (Ruel)</span>
               <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend friend--large">
+          <div class="friend__column">
+            <img src="images/jeong_da.jpeg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                정다은
+              </span>
+              <span class="friend__status">
+                Its raining..
+              </span>
             </div>
           </div>
         </li>
       </ul>
     </main>
     <!-- navigation bar -->
-    <navigation class="navi">
-      <ul class="navi_list">
+    <nav class="navi">
+      <ul class="navi__list">
         <li class="navi__list-item">
           <a href="friends.html" class="navi__list-link">
             <i class="fas fa-user"></i>
@@ -125,6 +133,6 @@
           </a>
         </li>
       </ul>
-    </navigation>
+    </nav>
   </body>
 </html>
