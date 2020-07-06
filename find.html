@@ -14,7 +14,9 @@
   <body>
     <!-- status bar -->
     <div class="status-bar">
-      <span class="status-bar__clock">12:50</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">12:50</span>
+      </div>
       <div class="status-bar__column">
         <i class="far fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -23,18 +25,17 @@
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <div class="status-bar__column"></div>
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__tiitle">Find</h1>
+        <h1 class="header__title">Find</h1>
       </div>
       <div class="class header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search fa-2x"></i>
+          <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog fa-2x"></i>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
@@ -45,7 +46,7 @@
             <span class="header-btn__icon">
               <i class="fas fa-qrcode fa-2x"></i>
             </span>
-            <span class="heaer-btn__title">
+            <span class="header-btn__title">
               QR Code
             </span>
           </li>
@@ -53,7 +54,7 @@
             <span class="header-btn__icon">
               <i class="fas fa-user-plus fa-2x"></i>
             </span>
-            <span class="heaer-btn__title">
+            <span class="header-btn__title">
               Add by Contacts
             </span>
           </li>
@@ -61,7 +62,7 @@
             <span class="header-btn__icon">
               <i class="fas fa-passport fa-2x"></i>
             </span>
-            <span class="heaer-btn__title">
+            <span class="header-btn__title">
               ID
             </span>
           </li>
@@ -69,7 +70,7 @@
             <span class="header-btn__icon">
               <i class="far fa-envelope fa-2x"></i>
             </span>
-            <span class="heaer-btn__title">
+            <span class="header-btn__title">
               Invite
             </span>
           </li>
@@ -80,20 +81,17 @@
           Recommended Friends
         </h5>
         <li class="find__friend find-freind">
-          <div class="find__frined freind freind--large">
-            <div class="freind__column">
-              <img
-                src="images/jeongho_avatar.jpeg"
-                class="g-avatar friend avatar"
-              />
-              <div class="frined__content">
-                <span class="freind__name">
+          <div class="find__friend friend friend--large">
+            <div class="friend__column">
+              <img src="images/jeongho_avatar.jpeg" class="friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name">
                   Jeongho Yun
                 </span>
               </div>
             </div>
-            <div class="freind__column">
-              <div class="freind__add-btn">
+            <div class="friend__column">
+              <div class="friend__add-btn">
                 <i class="fas fa-user-plus"></i>
               </div>
             </div>
@@ -102,8 +100,8 @@
       </ul>
     </main>
     <!-- navigation bar -->
-    <navigation class="navi">
-      <ul class="navi_list">
+    <nav class="navi">
+      <ul class="navi__list">
         <li class="navi__list-item">
           <a href="friends.html" class="navi__list-link">
             <i class="far fa-user"></i>
@@ -125,6 +123,6 @@
           </a>
         </li>
       </ul>
-    </navigation>
+    </nav>
   </body>
 </html>
