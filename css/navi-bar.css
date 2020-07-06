@@ -1,0 +1,35 @@
+.navi {
+  background-color: #fcfcfc;
+  position: fixed;
+  /* when you use position : fixed, must use width */
+  width: 100%;
+  padding: 20px 50px;
+  bottom: 0px;
+  left: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.navi .navi__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navi .navi__list-link {
+  position: relative;
+}
+
+.navi .navi__badge {
+  font-size: 10px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  color: white;
+  background-color: #dc5d46;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
