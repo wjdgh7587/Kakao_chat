@@ -14,7 +14,9 @@
   <body>
     <!-- status bar -->
     <div class="status-bar">
-      <span class="status-bar__clock">12:50</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">12:50</span>
+      </div>
       <div class="status-bar__column">
         <i class="far fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -23,21 +25,20 @@
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <div class="status-bar__column"></div>
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__tiitle">Chats</h1>
+        <h1 class="header__title">Chats</h1>
       </div>
       <div class="class header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search fa-2x"></i>
+          <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="far fa-comment fa-2x"></i>
+          <i class="far fa-comment"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog fa-2x"></i>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
@@ -45,28 +46,34 @@
       <ul class="chats__list">
         <li class="chats__chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img
-                class="chat__avatar g-avatar"
-                src="images/jeongho_avatar.jpeg"
-              />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Jeongho
-                </span>
-                <span class="chat__preview">Let's make do it</span>
+            <div class="chats__chat friend friend--large">
+              <div class="friend__column">
+                <img
+                  src="images/conan_avatar.jpeg"
+                  class="m-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Conan
+                  </span>
+                  <span class="friend__bottom-text">
+                    Grim Reaper...
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  July 6
+                </span>
+              </div>
             </div>
           </a>
         </li>
       </ul>
     </main>
     <!-- navigation bar -->
-    <navigation class="navi">
-      <ul class="navi_list">
+    <nav class="navi">
+      <ul class="navi__list">
         <li class="navi__list-item">
           <a href="friends.html" class="navi__list-link">
             <i class="far fa-user"></i>
@@ -74,6 +81,7 @@
         </li>
         <li class="navi__list-item">
           <a href="index.html" class="navi__list-link">
+            <div class="navi__badge">3</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -88,6 +96,6 @@
           </a>
         </li>
       </ul>
-    </navigation>
+    </nav>
   </body>
 </html>
