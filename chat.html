@@ -14,7 +14,9 @@
   <body>
     <!-- status bar -->
     <div class="status-bar">
-      <span class="status-bar__clock">12:50</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">12:50</span>
+      </div>
       <div class="status-bar__column">
         <i class="far fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -23,29 +25,31 @@
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <div class="status-bar__column"></div>
     </div>
     <header class="header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left fa-2x"></i>
+          <i class="fas fa-arrow-left"></i>
         </a>
-        <h1 class="header__tiitle">Best frined</h1>
+        <h1 class="header__title">Best frined</h1>
       </div>
-      <div class="class header__header-column">
+      <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search fa-2x"></i>
+          <i class="fas fa-search"></i>
         </span>
-        <div class="header__icon">
+        <span class="header__icon">
           <i class="fas fa-bars"></i>
-        </div>
+        </span>
       </div>
     </header>
     <main class="chat">
       <ul class="chat__messages">
         <span class="chat__timestamp">Monday July 6</span>
         <li class="incoming-message message">
-          <img src="images/jeongho_avatar.jpeg" class="g-avatar" />
+          <img
+            src="images/conan_avatar.jpeg"
+            class="g-avatar message__avatar"
+          />
           <div class="message__content">
             <span class="message__author">Best Frined</span>
             <div class="message__bubble">
