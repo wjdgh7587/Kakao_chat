@@ -5,6 +5,9 @@
 @import "header.css";
 @import "friends.css";
 @import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chats.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap");
 
 * {
