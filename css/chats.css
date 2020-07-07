@@ -1,3 +1,8 @@
+.chat-screen {
+  background-image: url("../images/chat_background.png");
+  /* background-color: red; */
+  min-height: 100vh;
+}
 .chat__write {
   position: fixed;
   bottom: 50px;
@@ -26,11 +31,19 @@
 }
 
 .chat__write-column input {
-  padding: 10px;
+  padding: 20px 10px;
   width: 100%;
   border: none;
   font-size: 14px;
 }
 .chat__write-column input:focus {
   outline: none;
+}
+.chats-body {
+  padding: 0;
+}
+
+.chats-body .header,
+.chats-body .status-bar {
+  padding: 0px 20px;
 }
