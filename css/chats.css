@@ -1,7 +1,12 @@
 .chat-screen {
-  background-image: url("../images/chat_background.png");
-  /* background-color: red; */
+  /* background-image: url("../images/chat_background.png"); */
   min-height: 100vh;
+  background-image: linear-gradient(to right, #f7971e, #ffd200);
+  /* background-color: rgb(112, 131, 214); */
+  /* 
+  How to use gradinet color?
+
+  using background-image with linear-gradient, not background-color */
 }
 .chat__write {
   position: fixed;
@@ -45,5 +50,72 @@
 
 .chats-body .header,
 .chats-body .status-bar {
+  padding: 10px 20px;
+}
+.chat-screen .chat__messages {
+  /* border-top: 1px solid #f7f7f7; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0px 20px;
+  padding-top: 20px;
+}
+.chat__messages .chat__timestamp {
+  background-color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -10px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.chat__messages:nth-child(2) {
+  /* background-color: red; */
+  margin-top: -20px;
+}
+.message {
+  display: flex;
+  align-items: flex-start;
+  /* width: 50%; */
+  margin-bottom: 20px;
+}
+
+.incoming-message img {
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.incoming-message {
+  align-self: flex-start;
+}
+.sent-message {
+  align-self: flex-end;
+}
+.message .message__bubble {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -10px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  padding: 7px 10px;
+  border-radius: 40px;
+  display: block;
+}
+
+.message .message__author {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+}
+
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
 }
