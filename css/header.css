@@ -15,10 +15,12 @@
   cursor: pointer;
   /* margin-bottom: 30px; */
 }
+
 .header .header__header-column {
   display: flex;
   align-items: center;
 }
+
 .header .header__back-btn {
   margin-right: 22px;
   font-size: 20px;
