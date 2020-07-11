@@ -1,17 +1,38 @@
-.chat-screen {
+.header-wrapper {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  padding: 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+.chats-body {
   /* background-image: url("../images/chat_background.png"); */
-  min-height: 100vh;
+  padding: 10px 0px;
+  padding-top: 100px;
+  min-height: 1000vh;
   background-image: linear-gradient(to right, #f7971e, #ffd200);
   /* background-color: rgb(112, 131, 214); */
   /* 
   How to use gradinet color?
-
+  
   using background-image with linear-gradient, not background-color */
 }
-.chat__write {
+
+.chats-body .header,
+.chats-body .status-bar {
+  padding: 5px 20px;
+}
+
+.chats-body {
+  padding: 0;
+}
+
+.chat__write-container {
   position: fixed;
-  bottom: 50px;
-  width: 80%;
+  bottom: 0px;
+  width: 100%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -24,9 +45,38 @@
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 0px 20px;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
+.chat__write {
+  margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
+  border: none;
+  font-size: 14px;
+}
+.chat__icon {
+  font-size: 18px;
+  transition: opacity 0.3s ease-in-out;
+}
+.chat__icon-left {
+  position: absolute;
+}
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
+}
+
+.chat__write:focus {
+  outline: none;
+}
+
+.chat__write:focus ~ .chat__icon {
+  /* display: none; */
+  opacity: 0;
+}
 .chat__write i {
   font-size: 22px;
 }
@@ -41,24 +91,16 @@
   border: none;
   font-size: 14px;
 }
-.chat__write-column input:focus {
-  outline: none;
-}
-.chats-body {
-  padding: 0;
-}
-
-.chats-body .header,
-.chats-body .status-bar {
-  padding: 10px 20px;
-}
 .chat-screen .chat__messages {
   /* border-top: 1px solid #f7f7f7; */
   display: flex;
+  font-size: 12px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 0px 20px;
   padding-top: 20px;
+  font-weight: 700;
 }
 .chat__messages .chat__timestamp {
   background-color: white;
