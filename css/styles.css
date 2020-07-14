@@ -8,6 +8,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chats.css";
+@import "mobile.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap");
 
 * {
